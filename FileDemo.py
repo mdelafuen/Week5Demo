@@ -18,6 +18,15 @@ def slice():
     answer1a = question1a[:10] + question1a[11:]
     print(answer1a)
 
+def list():
+    mylist = ["apples", "bananas", "pears", "oranges", "peaches"]
+    print(mylist)
+    slice1 = mylist[1] + ", " + mylist[2]
+    print(slice1)
+    for item in mylist:
+        print(f"Eat {item} this year")
+
 # main()
 #reverser()
-slice()
+#slice()
+list()
