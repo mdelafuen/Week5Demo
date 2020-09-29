@@ -36,6 +36,6 @@ def string_formatting():
 
 #main()
 #reverser()
-#slice()
-#list()
-string_formatting()
+slice()
+list()
+#string_formatting()
