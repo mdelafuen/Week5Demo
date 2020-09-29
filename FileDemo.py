@@ -1,8 +1,10 @@
+import random
 
 def main():
     file = open("Silly.txt", 'r')
     all_of_file = file.readlines()
-    print(all_of_file)
+    random_line = random.choice(all_of_file)
+    print(random_line)
 
 def reverser():
     rev_file = open("Reversable.txt", 'r')
@@ -26,7 +28,7 @@ def list():
     for item in mylist:
         print(f"Eat {item} this year")
 
-# main()
+main()
 #reverser()
 #slice()
-list()
+#list()
