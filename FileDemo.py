@@ -28,7 +28,14 @@ def list():
     for item in mylist:
         print(f"Eat {item} this year")
 
-main()
+def string_formatting():
+    result = 100/3
+    formatted_number = "{:5.3f}".format(result)
+    print(f"the result is {formatted_number}")
+
+
+#main()
 #reverser()
 #slice()
 #list()
+string_formatting()
