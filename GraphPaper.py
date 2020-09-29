@@ -14,7 +14,6 @@ def draw_lines():
         arcade.draw_line(0, horizontal_location, width, horizontal_location, arcade.color.BLACK, 2)
 
 
-
     arcade.finish_render()
 
 
