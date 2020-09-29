@@ -24,6 +24,7 @@ def main():
                                          50, int(data[2]), current_color)
 
 
+
     arcade.finish_render()
 
     arcade.run()
