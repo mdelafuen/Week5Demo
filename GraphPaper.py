@@ -10,6 +10,8 @@ def draw_lines():
     #drawings here
     for location in range(80, width, 80):
         arcade.draw_line(location, 0, location, height, arcade.color.BLACK, 2)
+    for horizontal_location in range(80, height, 80):
+        arcade.draw_line(0, horizontal_location, width, horizontal_location, arcade.color.BLACK, 2)
 
 
 
