@@ -9,8 +9,11 @@ def main():
 def reverser():
     rev_file = open("Reversable.txt", 'r')
     all_lines = rev_file.readlines()
-    to_insert = all_lines[0]
-    print(f"welcome to {to_insert}, Fantastic Student")
+    to_reverse = all_lines[1]
+    backwards = ""
+    for char in to_reverse:
+        backwards = f"{char}{backwards}"
+    print(f"Reversing string gives you {backwards}")
 
 def slice():
     question1a = "go to the store"
@@ -19,6 +22,7 @@ def slice():
     print(answer1b)
     answer1a = question1a[:10] + question1a[11:]
     print(answer1a)
+    # could have also done print(question1a.replace("s", ""))
 
 def list():
     mylist = ["apples", "bananas", "pears", "oranges", "peaches"]
@@ -26,16 +30,27 @@ def list():
     slice1 = mylist[1] + ", " + mylist[2]
     print(slice1)
     for item in mylist:
-        print(f"Eat {item} this year")
+        print(f"Eat {slice1} this year")
 
 def string_formatting():
     result = 100/3
     formatted_number = "{:5.3f}".format(result)
     print(f"the result is {formatted_number}")
 
+def statement():
+    file = open("Silly.txt", 'r')
+    all_of_file = file.readlines()
+    counter = 1
+    for line in all_of_file:
+        if counter%2 == 1:
+            print(line)
+        else:
+            pass
+        counter += 1
 
+#statement()
 #main()
-#reverser()
-slice()
-list()
+reverser()
+#slice()
+#list()
 #string_formatting()
